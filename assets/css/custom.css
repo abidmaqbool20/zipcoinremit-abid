@@ -1,0 +1,109 @@
+/*
+
+Template: COINEX - Crypto Currency HTML Template 
+Author: iqonicthemes.in
+Version: 1.5
+Design and Developed by: iqonicthemes.in
+
+NOTE: This is main stylesheet of template, This file contains the styling for the actual Template. Please do not change anything here! write in a custom.css file if required!
+
+*/
+.token-dist-wrap { box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2), 0 6px 20px 0 rgba(0, 0, 0, .19); padding: 40px 30px; border-radius: 20px; background: #131418; }
+.token-dist-wrap .token-dist-box { text-align: center; border-radius: 100%; border-bottom: 2px solid #fad9ac; padding-top: 8px; min-height: 80px; margin-bottom: 12px; }
+.token-dist-wrap .token-dist-box.last { max-height: 80px; }
+.token-dist-wrap span { color: #c88c39; font-size: 16px; }
+.token-dist-wrap p { margin: 0 0 10px; color: rgba(255, 255, 255, .36); }
+.token-dist-wrap img { max-width: 100%; }
+
+/*Global Network*/
+.global-main { background-size: cover; background-position: center bottom; background-repeat: no-repeat; position: relative; margin: 0; padding: 50px 0px 500px 0px; overflow: hidden; }
+.global-main:before { content: " "; position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: block; background: url("../images/global-network.png"); background-position: center center; background-repeat: no-repeat; z-index: 1; }
+.network-count-wrap { text-align: center; }
+.network-count-wrap span { display: block; font-size: 80px; line-height: 1; color: #c88c39; margin-bottom: 40px; text-transform: uppercase; }
+.global-wrap { position: relative; }
+.network-count-wrap { position: relative; height: 260px; z-index: 2; }
+.global-wrap .ripple-out { display: inline-block; vertical-align: middle; -webkit-transform: perspective(1px) translateZ(0); transform: perspective(1px) translateZ(0); box-shadow: 0 0 1px transparent; position: relative; }
+.global-wrap .ripple-out:before { content: ''; position: absolute; border: 5px solid #c88c39; top: 0; right: 0; bottom: 0; left: 0; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; border-radius: 50%; -webkit-animation-duration: 1s; animation-duration: 1s; -webkit-animation-iteration-count: infinite; animation-iteration-count: infinite; -webkit-animation-name: ripple-out; animation-name: ripple-out; }
+.global-wrap .sparks { width: 14px; font-size: 16px; height: 14px; display: block; background: #c88c39; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; border-radius: 50%; position: absolute; z-index: 9; opacity: 1; }
+.global-wrap .sparks.spark-1 { top: 14px; font-size: 16px; left: 200px; }
+.global-wrap .sparks.spark-2 { top: 80px; font-size: 16px; left: 250px; }
+.global-wrap .sparks.spark-3 { top: 45px; font-size: 16px; left: 600px; }
+.global-wrap .sparks.spark-4 { top: -21px; font-size: 16px; left: 861px; }
+.global-wrap .sparks.spark-5 { top: 245px; font-size: 16px; left: 348px; }
+.global-wrap .sparks.spark-6 { top: 213px; font-size: 16px; left: 600px; }
+.global-wrap .sparks.spark-7 { top: 110px; font-size: 16px; left: 793px; }
+.global-wrap .sparks.spark-8 { top: 316px; font-size: 16px; left: 968px; }
+
+.iq-our-clients .owl-carousel .owl-item{ text-align: center; }
+.iq-our-clients .owl-carousel .owl-item img{ width: auto; max-width: 100%; display: inline-block; }
+
+/*Digital Currency*/
+.overview-block-ptb .center-dv{ margin: 0 auto; display: table; }
+.dg-currency .dg-cr-title{ margin-bottom: 30px; }
+.dg-currency .dg-cr-title span svg{ width: 40px; vertical-align: middle;}
+.dg-currency .dg-cr-title h3{ font-weight: 600; font-size: 24px; }
+.dg-currency .dg-cr-content p{ padding: 0; font-family:  'Comfortaa', cursive}
+.dg-currency li{ width: 42.10526315789474%; text-align: left; }
+.dg-currency li.l-con.one{ float: left; margin-top: 50px }
+.dg-currency li.r-con.one{ float: right; margin-top: 100px }
+.dg-currency li.l-con.two{ float: left; margin-top: 50px }
+.dg-currency li.r-con.two{ float: right; margin-top: 50px }
+.button:focus { background: #c88c39; }
+/*team member*/
+.our-team .title{ min-height: 55px; line-height: normal; font-size: 20px; }
+/*safari issue*/
+.iq-countdown #countdown li{ float: left; display: block; }
+.row{ -webkit-flex-direction: row; -webkit-flex-wrap: wrap; }
+.row, .navbar,.navbar-nav,.nav,.navbar-expand-lg .navbar-collapse{
+ display:-webkit-flex;
+    display:-webkit-box;
+    display:-moz-flex;
+    display:-moz-box;
+    display:-ms-flexbox;
+    display:flex;
+    flex-direction:row;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) { 
+.token-dist-wrap.row, .iq-team .row, .iq-partners .row, .iq-anything .row{ width: 100%; display: table; }
+.token-dist-wrap.row .token-dist-box, .token-dist-wrap.row .tocken-dist-logo, .iq-team .row .col-lg-3,.iq-team .row .col-sm-4, .iq-partners .col-lg-4, .iq-anything .col-lg-6{ float: left; }
+.iq-team .row .col-lg-3,.iq-team .row .col-sm-3{ float: left; align-items: top; vertical-align: top; }
+} 
+
+/* -- Ripple out effect -- */
+@-webkit-keyframes ripple-out {
+    100% { top: -12px; right: -12px; bottom: -12px; left: -12px; opacity: 0; }
+}
+@keyframes ripple-out {
+    100% { top: -12px; right: -12px; bottom: -12px; left: -12px; opacity: 0; }
+}
+.global-wrap .ripple-out:hover:before,
+.global-wrap .ripple-out:focus:before,
+.global-wrap .ripple-out:active:before { -webkit-animation-name: ripple-out; animation-name: ripple-out; }
+
+@media(max-width:1023px) {
+.global-main{ display: none;}
+.our-team .title{ min-height: 55px; line-height: normal; font-size: 18px; }
+}
+@media(max-width:767px) {
+    .token-dist-wrap { max-width: 80%; margin: 0 auto; }
+    .token-dist-wrap span { font-size: 14px; }
+    /*Digital Currency*/
+    .dg-currency .dg-cr-title{ margin-bottom: 20px; }
+    .dg-currency .dg-cr-title h3{ font-weight: 600; font-size: 20px; line-height:30px;}
+    .dg-currency .dg-cr-title span svg{ width: 30px; }
+    .dg-currency li.l-con.one{ float: left; margin-top: 30px }
+    .dg-currency li.r-con.one{ float: right; margin-top: 60px }
+    .dg-currency li.l-con.two{ float: left; margin-top: 30px }
+    .dg-currency li.r-con.two{ float: right; margin-top: 30px }
+    .our-team .title{ min-height: 55px; line-height: normal; font-size: 16px; }
+}
+@media(max-width:575px) {
+    .tocken-dist-logo { display: none; }
+    .dg-currency li{ width: 100%; float: left; }
+}
+@media(max-width:480px) {
+    .iq-partners .col-6{ text-align: center;  width: 100%; flex: auto; max-width: 100%; }
+    .iq-partners .col-6 .Signal-partners img{ width: auto; }
+    .token-dist-wrap.row{ max-width: 100%; }
+}
